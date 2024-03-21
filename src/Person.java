@@ -1,4 +1,4 @@
-public class Person {
+public abstract class Person {
 
     private String name;
     private int age;
@@ -25,12 +25,25 @@ public class Person {
         this.age = age;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public void changeName(String name){
         this.name =name;
     }
 
-    public void changeAge(String name){
-        this.name =name;
+    public void changeAge(int age){
+
+        this.age =age;
     }
 
 }
